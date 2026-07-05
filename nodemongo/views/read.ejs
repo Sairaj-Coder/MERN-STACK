@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+
+<body>
+
+    <% for(user of resu){ %>
+        <div style="background-color: bisque;">
+            <h3> name: <%= user.from %>
+            </h3>
+            <h3> too: <%= user.to %>
+            </h3>
+            <h3> message: <%= user.message %>
+            </h3>
+            <form method="post" action="/chats/<%= user._id %>?_method=delete">
+                <button>Delete</button>
+            </form>
+            <form method="get" action="/chats/<%= user._id %>">
+                <button>Edit message</button>
+            </form>
+        </div>
+        <% } %>
+            <br><br><br>
+            <form method="get" action="/chats/new">
+                <button>Create New message</button>
+            </form>
+
+</body>
+
+</html>

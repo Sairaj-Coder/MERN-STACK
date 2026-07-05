@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit in Message</title>
+</head>
+<body>
+    <form method="post" action="/chats/<%=data._id %>?_method=patch">
+        <p>From:<%=data.from%> </p>
+        <p>to:<%=data.to%> </p>
+        <textarea name="message"><%=data.message%></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

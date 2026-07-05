@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Reading The details</h3>
+    <p>
+        <h4>ID &nbsp;: <%= users.id %>    </h4>
+        <h4>Name &nbsp;: <%= users.username %>    </h4>
+        <h4>email &nbsp;: <%= users.email %>    </h4>
+        
+        <a href="http://localhost:5000/users">Back to database</a>
+
+        <a href="http://localhost:5000/users/read/<%= users.id %>/edits">Edit</a>
+    </p>
+
+</body>
+</html>

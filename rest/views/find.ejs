@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1> Here is post In detail</h1>
+    <div class="details">
+    <h2> ID:  <%=   data.id    %>                               </h2>
+    <h3> Name:  <%=   data.name    %>                           </h3>
+    <h3> Query:  <%=   data.problem    %>                       </h3>
+    <a href="http://localhost:8080/post">See all post</a>
+    <a href="http://localhost:8080/post/<%= data.id  %>/edit">Edit Post</a>
+    
+</div>
+   
+</body>
+</html>

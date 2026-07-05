@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User request</title>
+</head>
+
+<body>
+    <hr>
+    <a href="http://localhost:5000/">Back TO Homepage</a>
+    <br><br><br>
+    <a href="http://localhost:5000/users/add">ADD NEW USER</a>
+    <hr>
+    <table border="black">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>DELETE</th>
+          
+            <th>SEE In details</th>
+        </tr>
+        <% for(users of total){ %>
+            <tr>
+                <td>
+                    <%= users.id %>
+                </td>
+                <td>
+                    <%= users.username %>
+                </td>
+                <td>
+                    <%= users.email %>
+                </td>
+                <td>
+                    <form method="POST" action="/users/<%=users.id%>?_method=DELETE">
+                        <button>Delete</button>
+                    </form>
+                </td>
+               
+                <td><a href="http://localhost:5000/users/read/<%=users.id%>">SEE IN Deatils</a></td>
+            </tr>
+            <% } %>
+    </table>
+</body>
+
+</html>

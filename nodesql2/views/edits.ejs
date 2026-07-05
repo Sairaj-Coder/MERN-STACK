@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Helo sir</h1>
+    <form  method="POST" action="/users/read/<%=users.id%>?_method=PATCH">
+        <h1>Form detected For editing</h1>
+        <h3><%=users.id%></h3>
+        <input type="hidden" name="password" value="<%= users.password %>">
+        <textarea name="username" id="name"><%=users.username%></textarea>
+        <textarea name="email" id="name"><%=users.email%></textarea>
+        <br><br>
+        <input type="text" name="pass" placeholder="Enter Password">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
