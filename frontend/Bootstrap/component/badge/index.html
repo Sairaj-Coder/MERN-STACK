@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>badges</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <p>
+    <ul>
+        <li>Badge is bascially works like notification ex whatsapp
+            notification</li>
+        <br>
+        we have to create span and class="badge"
+        <br>
+
+        <h1>Whatsapp <span class="badges text-bg-primary ">25</span></h1>
+        <br>
+
+        <li>here if we remove text then it will inherit background color of parent class</li>
+        <h1 style="color: green;">Gmail <span class="badges bg-danger ">25</span></h1>
+
+        <br>
+        <li>we can use button and badge together</li>
+        <button class="btn btn-primary">
+            Notification
+            <span class="badge bg-dark ">100+</span>
+        </button>
+        <li>we can create notification like whatsapp and facebook</li>
+        <br>
+        
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+        
+        <br>
+
+        <li>we can change shape of badge color read next documentry</li>
+        <span class="badge rounded-pill text-bg-info">Info</span>
+        
+        <li>we can read more on this website</li>
+        <a href="https://getbootstrap.com/docs/5.3/components/badge/" class="btn btn-primary">Click here</a>
+    </ul>
+
+
+    </p>
+</body>
+
+</html>

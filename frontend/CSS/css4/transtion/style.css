@@ -1,0 +1,20 @@
+div{
+    height: 100px;
+    width:100px ;
+    background-color: black;
+    margin: 0 auto;
+    
+    transition-duration: 1s;/*total time for transtion*/
+    transition-timing-function:ease-in ;/*timing function in transtion*/    
+}
+div:hover{
+    /*transtion delay or delay inin transtion*/
+    transition-delay: 1s;
+    background-color: hotpink;
+    margin-top: 500px;/*property such as color margin etc*/
+    border-radius: 50%;
+}/*
+short hand
+transtion:margin-top 2s each-in-out 0.2s;
+
+*/

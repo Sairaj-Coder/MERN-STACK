@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    height: 50px;
+    margin: 50px;
+    border:5px ridge red;
+    border-radius: 25px;
+    border-left-style:dotted ;
+    border-right-style:dotted ;
+
+}
+div{
+    border:5px ridge blue ;
+    text-align: center;
+    height: 150px;
+    margin: 50px;
+    border-left-style:dotted ;
+    border-right-style:dotted ;
+    border-radius: 25px;                        
+    padding: 25px;
+}
+button{
+    background-color: whitesmoke;
+    padding: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    margin:0px 250px ;
+}

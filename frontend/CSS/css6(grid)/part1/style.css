@@ -1,0 +1,26 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: wheat;
+    
+    /*grid and flex property are only apply for child container and should be
+    written inside parent container to child container should use it*/
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px ;
+    grid-template-columns: 150px 150px 150px 150px  ;
+    grid-template-columns: auto auto auto auto;/*automatically dividing parent container 
+    into equal parts
+    
+    */
+    
+
+}
+.item{
+    /* width: 100px;
+    height: 50px; */
+    /*if we remove height and width then it will occupy whole grid cell*/
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}

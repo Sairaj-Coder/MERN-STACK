@@ -1,0 +1,29 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: wheat;
+    display: grid;
+    /* grid-template-rows: 100px 100px 100px 100px ;
+    grid-template-columns: 150px 150px 150px 150px  ;
+    grid-template-columns: auto auto auto auto; */
+    /*shorthand for grid template*/
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(3,100px);
+
+    /*grid-gap= gap between rows and columns*/
+    row-gap: 10px;
+    column-gap: 10px;
+    /*short hand*/
+    grid-gap: 5px 6px;
+    /*if equall then */
+    grid-gap:5px;
+}
+.item{
+    /* width: 100px;
+    height: 50px; */
+    
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}

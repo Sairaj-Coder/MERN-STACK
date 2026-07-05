@@ -1,0 +1,41 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: wheat;
+    display: grid;
+    
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(3,100px);
+
+    
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-gap: 5px 6px;
+    grid-gap:5px;
+   
+}
+.item{
+    
+    
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+#a{
+    /*grid-colum now we are holding from line2 to line 4*/
+    /*grid row holiding from line 1 to next 4 rows*/
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*short hand*/
+    grid-row: 1 / 5;
+
+
+}
+#b{
+    /*nnow we are holding 2 rows*/
+    background-color: aquamarine;
+    grid-row: 2/span 2;
+}

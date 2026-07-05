@@ -1,0 +1,88 @@
+
+h1{
+    color: brown;
+}
+/* attribute selector */
+button[id="signup"]{
+    background-color: brown;
+}
+button[id="a"]{
+    background-color:green ;
+    color:white ;
+}
+button[class="a"]{
+    color: wheat;
+    background-color: blue;
+}
+/* descender selector */
+nav ul li a{
+    color: palevioletred;
+}
+nav ul li{
+    color: blue;
+    
+}
+h3{
+    color: red;
+    text-decoration:red underline ;
+}
+/* psedoclass 1) */
+nav ul li a:hover{
+    text-decoration: none; 
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    background: rgb(60, 2, 2);
+    font-style: italic;
+}
+button:hover{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-display:auto;
+    text-align: center;
+
+}
+/* psedoclass 2) active when ever we clcik */
+button:active{
+    background-color:burlywood;
+    font-weight: 900;
+    color:darkmagenta;
+}
+/* psedoclass 3) check when ever we check  */
+input[type="radio"]:checked+label{
+    background-color: gold;
+    font-weight: bold;
+    color: black;
+    
+}
+
+/* psedoclass 4) nth of type when ever we wwant to combine more then one */
+div:nth-of-type(1n){
+    background-color:burlywood;
+}
+p:hover{
+    color:rgb(57, 85, 40);
+    text-align: center;
+    font-weight:bold ;
+}
+
+h1:hover{
+    color: black;
+    /* text-align: center; */
+}
+
+/* pseudo element for first letter line selection */
+h1::first-letter{
+    color:black;
+}
+p::first-line{
+    background-color: wheat;
+}
+p::selection{
+    color: green;
+}
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+/* Lets learn about box model */
+
+div{
+    background-color: green;
+    border: 2px dotted black;
+}
+
+.a{ 
+    /*here property are apply for all the div including outer and inner*/
+    background-color: yellow;
+    font-style: italic;
+    height: 200px;/*it decide hight and width of block*/
+    width:500px;
+    padding-left:50px ;/*basically padding is for content*/
+    border: 2px solid black;
+    
+}
+.e{ 
+    padding:10px ;
+    
+    background-color: wheat;
+
+    margin-top: 30px;/*it is used to separate two blocks*/
+}
+.e{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:flex-start;
+  
+   
+        
+
+}
+.f{ 
+    height: 50px;
+    width: 300px;
+   
+    align-self: flex-end;
+}
+
+
+
+
+
+
+.e div{
+    margin-right: 20px;
+}
+
+
+
+
+
+

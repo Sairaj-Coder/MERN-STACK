@@ -1,0 +1,26 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(97, 97, 60);
+
+}
+#b1:hover{
+    position: relative;
+
+    background-color: red;
+    z-index: 3;
+}
+#b2{
+    position: relative;
+    background-color: aqua;
+    bottom: 90px;
+    left: 30px;
+    z-index: 2;
+}
+#b3{
+    position:relative;
+    bottom: 100px;
+    background-color: blue;
+    z-index: -1;
+}
+

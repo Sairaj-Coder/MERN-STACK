@@ -1,0 +1,13 @@
+/* ul{
+    display: inline;
+} */
+ /*bullet point disapear only but element are still in list*/
+li{
+    display: inline;
+}
+/*all the bullet point and elemnt comes in one line*/
+/*Li (list items) have their display property set to “list-item”
+by default which makes them a bulleted list item . When
+this property is reset by you to “inline” , then the 
+bullet points also disappear . Inaway, we override 
+the default settings with our CSS*/

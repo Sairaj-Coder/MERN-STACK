@@ -1,0 +1,33 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 100px
+
+}
+div:hover{
+    
+
+    transition:2s ;
+    border-radius: 10%; 
+    box-shadow: -15px 20px 50px blue;
+    
+}
+button{
+    background-color: wheat;
+    margin-left: 200px;
+    margin-top: 100px;
+    height: 100px;
+    width: 200px;
+    font-size:large;
+    padding: 5%;
+    border-radius: 10%;
+
+}
+button:hover{
+    transition: 1s;
+    border: 2px solid red;
+    box-shadow:50px 50px 5px black ;
+    
+}

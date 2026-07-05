@@ -1,0 +1,10 @@
+this is font awesome link
+https://cdnjs.com/libraries/font-awesome
+where we will find this link which is first one in red  color we have to copy = copy link tag 
+similar link which down will be copy
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+then we have to go on this link to use that icon:
+https://fontawesome.com/icons
+
+
+at once we have to use either google icons or awesome font

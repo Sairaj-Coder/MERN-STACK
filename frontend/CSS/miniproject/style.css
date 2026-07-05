@@ -1,0 +1,147 @@
+/*right now we are going to remove all the margins and padding
+ as we know items like list have their own margin and padding
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  
+    
+}
+/*now we are modifying background of main body*/
+.main_box{
+    background: url("photo.jpg");
+    /*there is no proper height and width set for main box therefore
+    image is not properly visible
+    so setting height and width=now we want that our main box
+    should take size of whole document so
+    either we should set height=100px or 100vh here vh stands for
+    view port 
+    here view port basical whole screen which is visible to us
+    search more on google   
+    */
+    height: 100vh;
+    background-size: cover;
+    /*setting the posi*/
+}
+/*setting for button*/
+.main_box .btn_one{
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    /*setting postion wrt to parent element here main box is parent*/
+    position:absolute ;
+    top:15px ;
+    left: 10px; 
+    line-height: 30px;
+    
+
+}
+/*now here we moving side bar menu left*/
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.1);
+    
+    box-shadow: 0 0 6px rgba(255, 255, 255,0.5) ;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+.sidebar_menu .menu{
+ padding-top:50px ;
+
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow:0 0 4px rgba(255, 255, 255,0.5);
+}
+/*here we are applying style to anchor tag inside side bar menu
+which is inside logo only
+*/
+.sidebar_menu .logo a{
+    position: absolute;
+    left:50px ;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.sidebar_menu .btn_two {
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 250px;
+    /* opacity: 0; */
+
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+
+
+}
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
+/*when ever we set the display value to none its width
+higth everything disappers but it use doesn't 
+all reserve space disappears
+
+*/
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    height: 90%;
+    width: 87%;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 4px;
+
+
+}
+/*now whenever we hover on icon two it will change cursor*/ 
+.main_box .btn_two i:hover{
+    cursor: pointer;
+}
+.main_box .btn_one i:hover{
+    cursor: pointer;
+}
+.sidebar_menu .social_media i:hover{
+   
+    /*scale means increasing size*/
+    transform: scale(1.1);
+    opacity: 1;
+    color: white;
+}
+/*it select all sibling*/
+#check:checked ~ .sidebar_menu{
+    transition:all 0.5s linear ;
+    left: 0;
+}
+/*it select first sibling only*/
+#check:checked + .btn_one i {
+    opacity: 0;
+} 

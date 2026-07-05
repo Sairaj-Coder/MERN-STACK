@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Qs1.Recreate the following table using HTML:
+
+    <table border="black">
+        <thead>
+        <caption>Student Information</caption>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="6">Info</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>House</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Delhi</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    Qs2.Recreate the following form using HTML
+    <br>
+    <br>
+    <br>
+    <form action="good">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="here" id="name" name="Name">
+    <!---radio button-->
+        <br>
+        <label>Sex:</label>
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+        
+        <!---dropdown box-->
+        <label for="cont">Country:</label>
+        <select name="country" id="cont">
+            <option>Select An option</option>
+            <option value="India">India</option>
+            <option value="Non Indian">Other</option>
+
+
+        </select>
+        <br>
+        <!--Text area-->
+        <label for="feedback">Enter Message:</label><br>
+        <textarea 
+        id="feedback" 
+        rows="5"
+        name="feedback"
+        value="feedback"
+        >
+        
+        </textarea>
+        <!--checkbox-->
+        <br>
+        
+        <input type="checkbox" id="done" name="subscribe" value="yes">
+        <label for="done">Subscribe?</label>
+        <br>
+        <!--submit button-->
+       <br><button>Submit</button>   
+    </form>
+
+    <p>Q2.Recreate the following form using HTML</p>
+    <form action="server">
+        <label id="name">Name:</label>
+        <input type="text" for="name" name="username" placeholder="Write your name here">
+        <br>
+        <br>
+        <label id="mail">Email:</label>
+        <input type="email" for="mail" name="mail" placeholder="Write your mail:">
+        
+        <br>
+        <br>
+        <!--text area-->
+        <label for="feedback">Message:</label>
+        <br>
+        <textarea id="feedback"  name="feedback" ></textarea>
+        <br>
+        <!----radio button in group-->
+        <label>Rates us our of 5:</label><br>
+        <input  type="radio" name="rating" value="1" id="1"/>
+        <label for="1">1</label><br>
+        <input  type="radio" name="rating" value="2" id="2"/>
+        <label for="2">2</label><br>
+        <input  type="radio" name="rating" value="3" id="3"/>
+        <label for="3">3</label><br>
+        <input  type="radio" name="rating" value="4" id="4"/>
+        <label for="4">4</label><br>
+        <input  type="radio" name="rating" value="5" id="5"/>
+        <label for="5">5</label><br>
+        
+
+
+
+        <br><button>Send your message</button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

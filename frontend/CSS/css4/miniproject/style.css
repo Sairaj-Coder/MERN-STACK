@@ -1,0 +1,29 @@
+*{
+    background-color:  wheat
+}
+div{
+    border: 2px solid white;
+    width: 210px;
+    border-radius:5%;
+    display: inline-block;
+    margin-left: 50px;
+    box-shadow:10px 10px 10px black;
+    margin-top: 50px;
+    background-color: white;
+}
+img{
+    border: 2px solid black;
+    width: 200px;
+    height: 274px;
+    border-radius: 30px;
+
+}
+#a:hover{
+    transition: 2s;
+    box-shadow:30px 30px 5px black ;
+    height: 60%;
+}
+#b:hover{
+    transition: 2s;
+    box-shadow:30px 30px 5px black ;
+}

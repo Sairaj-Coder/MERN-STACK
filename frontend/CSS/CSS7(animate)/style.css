@@ -1,0 +1,43 @@
+.a{
+    height: 300px;
+    width: 300px;
+    color: red;
+    text-align: center;
+     margin-left: 30%;
+    background-color: red;
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    
+}
+
+
+@keyframes circle{
+    from{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        box-shadow: 8px solid black;
+
+
+    }
+    50%{
+        background-color: yellow;
+        height: 600px;
+        width: 600px;
+    }
+    to{ 
+        height: 100px;
+        width: 100px;
+        margin-left: 30%;
+        margin-top:50% ;
+        border-radius: 30%;
+        background-color: blue;
+        box-shadow: 8px solid black;
+        transform: rotate(180deg);
+        
+    }
+}

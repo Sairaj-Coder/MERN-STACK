@@ -1,0 +1,32 @@
+main{
+    background-color: aqua;
+    color: blue;
+    /* now here whole text became blue as color is for text
+    and background color is for back*/
+} 
+h1{
+    color: black;
+    background-color:aliceblue;
+    text-align: center;
+    font-weight: 900;
+}
+h2{
+    /* now h2 inside main still we can design it */
+    color: black;
+    text-align:center;
+    font-weight: 800;
+}
+p{
+    background-color: antiquewhite;
+    font-weight: 600;
+    text-align: justify;
+    text-decoration:black double underline;
+}
+r{
+    font-weight: 900;
+    
+    color: black;
+    line-height:10;
+    letter-spacing: 5px;
+    text-decoration:  overline;
+}

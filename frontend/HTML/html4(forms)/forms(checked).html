@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Box</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+        <label for="Ready">I am ready</label>
+        <input type="checkbox" name="Ready" id="Ready">
+        <!--http://127.0.0.1:5500/server?Ready=on=> no value attributes-->
+        <br>
+        <label for="age">I am 18 plus</label>
+        <input type="checkbox" name="age" id="age" value="18">
+        <!-- http://127.0.0.1:5500/server?age=18 -->
+        <br>
+        
+        <!--http://127.0.0.1:5500/server?Ready=on&age=18 / age=on // if value is not only chec when ever we checked the box-->
+        </div>
+        <div>
+            <!--grouping different checked box using name attributes-->
+            Grouping different elements
+            <br>
+        <label for="1">Box 1</label>
+        <input type="checkbox" name="Students" id="1" value="Box 1">
+        <br>
+        <label for="2">Box 2</label>
+        <input type="checkbox" name="Students" id="2" value="Box 2">
+        <br>
+        <label for="3">Box 3</label>
+        <input type="checkbox" name="Students" id="3"value="Box 3">
+        <br>
+
+         <!--http://127.0.0.1:5500/server?Students=Box+1&Students=Box+2&Students=Box+3 => if all boxes are selected-->   
+
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <!--http://127.0.0.1:5500/server?Ready=on&age=18&Students=Box+1&Students=Box+2&Students=Box+3 if all the boxes even up wala also selected-->
+</body>
+</html>

@@ -1,0 +1,31 @@
+h1{
+    border: 2px solid black;
+    background-color: aqua;
+}
+/*media query = when website size changes */
+/*it says it will work until max width is not smaller that 701px*/
+
+@media(max-width:700px){
+    h1{
+        background-color: red;
+    }
+
+}
+/*it says it will work until minimum width is not greater that 701px*/
+@media(min-width:701px){
+    h1{
+        background-color: aqua;
+        
+    }
+
+}
+/*even we can set range by adding add check notebook or mdn*/
+
+/*we can set media query portrait or landscape*/
+@media(orientation: landscape){
+    h1{
+    background-color: black;
+    color:white ;
+
+}
+}

@@ -1,0 +1,15 @@
+#a{
+    height: 550px;
+    width: 350px;
+    margin:200px;
+    background-image:url("iron.webp");
+    background-size:cover ;
+}
+div{
+    height: 300px;
+    width: 500px;
+    background-color: aqua;
+    margin:200px;
+    background-image: url(https://th.bing.com/th/id/OIP.jO0-EmYGds5Nn3F1RMRt-gHaDI?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+}

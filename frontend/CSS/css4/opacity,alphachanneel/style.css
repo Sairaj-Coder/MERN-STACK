@@ -1,0 +1,25 @@
+*{
+    
+    text-align: center;
+    background-color: beige;
+     
+}
+
+/*APLHA CHANNEL*/
+h1{
+    
+   background-color:rgba(0, 0, 255, 0.3);
+   color: black;
+   
+}
+/*opacity=whole paragraph including letter will be empacted*/
+p:hover{
+    background-color: blueviolet;
+    opacity: 0.5;/*whole letter will becamE  invisible*/
+    transition: 5s;
+    
+
+
+}
+
+
