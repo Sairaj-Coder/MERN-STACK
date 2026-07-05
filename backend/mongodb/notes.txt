@@ -1,0 +1,102 @@
+//to start mongo shell we basically use command 
+0)mongosh
+//crud operation => create read update delete 
+//to clear the ctr+l
+//commands
+1) help
+2)show dbs= to show database
+
+//mongoshell is similar to js shelll  many
+commands like str.uppercase()--> runs in it
+
+what is test=>it create temporary database for us
+
+//to create database
+3)use college => create new databases if not exist & else use existing
+//when ever we create database we show insert data else it will not be permanent
+
+4)db =>to check current database
+
+
+//inserting data into mongo done throw or special format BSON data
+BSON=> binary json
+json                   ||        BSON
+textbased              ||     mongo will convert it into binary 
+parsing is difficult  
+space inefficient
+less datatype          ||   more datatype
+human read             ||   Machine only
+
+
+close cousin
+
+
+
+in sql table in mongo collection
+rows in sql =document in mongo
+imprtant term=>
+collections
+1}Documents:Mongo stores data in form of documents(BSON)
+2}collection:MongoDB stores documents in collection
+different document are collection in mongo
+one collection means many documents together
+examp of document;
+{
+    name:"al",
+    age:18,
+    status:"D",
+    groups:["politics","news"]
+}
+
+
+
+INSERT in db
+(insert individual document i.e row in sql)
+(collection means tables in sql);
+
+//student table = collection
+//student details in that table = documents
+
+5)show collections  //similar to see all tables in sql
+
+
+//replace collection with table name;
+
+6) db.collection.insertOne({key:vale}): Inserts a single document.
+7) db.collection.insertMany([{data1}, {data2}]): Inserts multiple documents at once. 
+
+ex=db.student.insertOne({name:"sairaj", age:20})
+
+//each collection has unique id like table has primary key
+mongo automatically generates it
+
+8)db.collection.find() 
+// to see data of table or All documents in collection that are stored in array format
+//replace collection with table name
+
+note: if collection does not exist mongo creates it and add document into that
+collection
+
+
+*)multiple data insertion =we pass the array of data
+syntax:
+db.collection.insertMany([{data1}, {data2}])
+
+
+//find in db
+
+8)db.collection.find()-->gives everything in collection
+
+for specific:
+
+1)db.collection.find({key:value,multiplecondition})
+1)db.collection.find({key:value , multiplecondition})
+//returns cursor =>reference to original
+
+
+
+2)db.collection.findOne({key:value})-->only one value return
+//we can add multiple conditons in form of key value
+//actual document is written
+
+//query operator

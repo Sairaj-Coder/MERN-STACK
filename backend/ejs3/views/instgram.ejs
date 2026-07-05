@@ -1,0 +1,36 @@
+<!-- including data from head ejs -->
+ <%-   include("include/head.ejs");       %>
+
+<body>
+    <h1>Instgram </h1>
+
+    <!-- using word follower -->
+   
+    <h1>
+        <%= data['name'] %>
+    </h1>
+    <button>Follow</button>
+    <button>Message</button>
+    <h3>followers are: <%= data.followers %> --- Following are: <%= data.following %></h3>
+
+    <h3>Posts are:</h3>
+    <hr>
+    <% for (let i=0; i<(data['posts']).length;i++){   %>
+    <div>
+      <img src="<%= data['posts'][i]['image']   %>" alt="random image"   height="100px" >
+      <h4>Total likes are: <%= data['posts'][i]['likes']   %>   </h4>
+      <h4>Total comments are:<%= data['posts'][i]['comments']   %>   </h4>
+
+    </div>
+    <hr>
+    <%  }    %>
+    
+
+
+
+
+
+    
+</body>
+<script src="/index.js"></script>
+</html>

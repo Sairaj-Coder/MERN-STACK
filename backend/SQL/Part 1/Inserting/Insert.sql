@@ -1,0 +1,40 @@
+CREATE DATABASE  IF NOT EXISTS APNA_COLLEGE;
+USE APNA_COLLEGE;
+CREATE TABLE STUDENT(
+	NAME VARCHAR(30) not null,
+    
+    age varchar(30) ,
+    constraint age_check CHECK (age>=18),
+    
+    id int not null,
+    primary key(id),
+    
+    FEES INT DEFAULT 19000 NOT NULL
+    
+    
+
+);
+INSERT INTO STUDENT
+(id, age,NAME)
+VALUES 
+(1,18,"SAIRAJ"),
+(2,19,"SAMRUDDHI"); 
+
+INSERT INTO STUDENT
+(id, age,NAME,FEES)
+VALUES 
+(3,18,"SAIRAJ",199500);
+
+
+-- SHOW WHOLE DATABASE BUT IF NECCESSARY FIRST WE HAVE TO SELECT IT USING USE KEYWORD
+select * from STUDENT;
+
+-- TO SEE PARTICULAR PART OF DATABASE
+SELECT NAME,id FROM STUDENT;
+
+
+
+-- drop table if exists STUDENT;
+
+
+

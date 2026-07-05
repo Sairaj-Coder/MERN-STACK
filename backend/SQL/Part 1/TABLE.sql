@@ -1,0 +1,14 @@
+USE college;
+
+DROP  TABLE IF EXISTS INSTAGRAM ;
+
+
+CREATE TABLE INSTAGRAM(
+	ID INT,
+    Name VARCHAR(30),
+    Email VARCHAR(40),
+    Followers INT,
+    Following INT
+);
+
+SELECT * FROM INSTAGRAM;
