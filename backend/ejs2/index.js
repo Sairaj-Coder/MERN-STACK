@@ -6,7 +6,7 @@ const app=express();
 const port =9000;
 
 /*seating views */
-app.set("views",path.join(__dirname,"/views"))
+app.set("views",path.join(__dirname,"views"))
 
 app.listen(port,()=>{
     console.log("the port is listening");
